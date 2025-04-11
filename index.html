@@ -7,8 +7,58 @@
         <title>ПЕРМГИПРОВОДХОЗ</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/media.css">
+        <script src="js/main.js" defer></script>
     </head>
     <body>
-        <script src="js/main.js"></script>
+        <header class="header">
+            <div class="container container--big">
+                <div class="header__wrapper">
+                    <div class="menu">
+                        <div class="burger-btn">
+                            <div class="burger-btn__line"></div>
+                        </div>
+                        <div class="burger__text">Меню</div>
+                    </div>
+
+                    <a href="mailto:info@giprovodhoz.ru" class="info-block info-block--mail">
+                        <img src="./images/icons/mail-icon.svg" alt="Email" class="info-block__img">
+                        <span class="info-block__wrapper">
+                            <span class="info-block__number">info@giprovodhoz.ru</span>
+                            <span class="info-block__text">Написать нам</span>
+                        </span>
+                    </a>
+
+                    <div class="logo">
+                        <picture>
+                            <source srcset="images/logo/logo-1920.png" media="(min-width: 1920px)">
+                            <source srcset="images/logo/logo-1280.png" media="(min-width: 1280px)">
+                            <source srcset="images/logo/logo-768-1024.png" media="(min-width: 1024px)">
+                            <source srcset="images/logo/logo-768-1024.png" media="(min-width: 768px)">
+                            <source srcset="images/logo/logo-480.png" media="(min-width: 480px)">
+                            <source srcset="images/logo/logo-320.png" media="(min-width: 280px)">
+                            
+                            <img src="images/logo/logo-1920.png" alt="Logo" class="logo__img">
+                        </picture>
+                    </div>
+
+                    <a href="tel:+73422465010" class="info-block info-block--call-btn">
+                        <img src="./images/icons/telephone-icon.svg" alt="Telephone" class="info-block__img">
+                        <span class="info-block__wrapper">
+                            <span class="info-block__number">+7 (342) 246-50-10</span>
+                            <span class="info-block__text">Обратный звонок</span>
+                        </span>
+                    </a>
+
+                    <div class="info-block info-block--address">
+                        <img src="./images/icons/location-icon.svg" alt="Location" class="info-block__img">
+                        <span class="info-block__wrapper">
+                            <span class="info-block__number">г. Пермь</span>
+                            <span class="info-block__text">ул. Монастырская 160</span>
+                        </span>
+                    </div>
+            </div>
+            </div>
+        </header>
     </body>
 </html>
