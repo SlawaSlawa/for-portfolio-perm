@@ -15,6 +15,9 @@
         max-width: 896px;
         padding: 0 76px;
     } 
+    .container--big {
+        padding: 0!important;
+    }
 }
  
 @media (min-width: 1280px) {
@@ -26,7 +29,7 @@
 
 @media (min-width: 1920px) {
     .container {
-        max-width: 1300px;
+        max-width: 1564px;
         padding: 0 96px;
     } 
 }
@@ -125,3 +128,84 @@
     }
 }
 /* /////////// HEADER -------------- */
+
+/* ----------- HERO --------------- */
+@media (min-width: 480px) {
+    .hero {
+        padding: 40px 0;
+        background-image: url(../images/hero-bg/hero-bg-480.png);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 64px 0;
+        background-image: url(../images/hero-bg/hero-bg-768.png);
+    }
+    .title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    .info-title {
+        margin-bottom: 40px;
+    }
+    .consultation-form {
+        width: 467px;
+        margin: 0 auto;
+        padding: 28px 36px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        padding: 64px 0 77px;
+        background-image: url(../images/hero-bg/hero-bg-1024.png);
+    }
+    .hero__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero__text {
+        width: 440px;
+    }
+    .consultation-form {
+        width: 332px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero {
+        padding: 64px 0 77px;
+        background-image: url(../images/hero-bg/hero-bg-1280.png);
+    }
+    .hero__text {
+        width: 656px;
+    }
+    .title {
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .hero {
+        padding: 80px 0 78px;
+        background-image: url(../images/hero-bg/hero-bg-1920.png);
+    }
+    .hero__text {
+        width: 904px;
+    }
+    .title {
+        font-size: 44px;
+        line-height: 60px;
+        margin-bottom: 28px;
+    }
+    .consultation-form {
+        width: 456px;
+    }
+}
+/* /////////// HERO --------------- */
