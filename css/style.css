@@ -1,44 +1,47 @@
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('../fonts/GothamPro/GothamPro.woff2') format('woff2'),
-        url('../fonts/GothamPro/GothamPro.woff') format('woff');
+    font-family: "Gotham Pro";
+    src: url("../fonts/GothamPro/GothamPro.woff2") format("woff2"),
+        url("../fonts/GothamPro/GothamPro.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('../fonts/GothamPro/GothamPro-Medium.woff2') format('woff2'),
-        url('../fonts/GothamPro/GothamPro-Medium.woff') format('woff');
+    font-family: "Gotham Pro";
+    src: url("../fonts/GothamPro/GothamPro-Medium.woff2") format("woff2"),
+        url("../fonts/GothamPro/GothamPro-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('../fonts/GothamPro/GothamPro-Bold.woff2') format('woff2'),
-        url('../fonts/GothamPro/GothamPro-Bold.woff') format('woff');
+    font-family: "Gotham Pro";
+    src: url("../fonts/GothamPro/GothamPro-Bold.woff2") format("woff2"),
+        url("../fonts/GothamPro/GothamPro-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 :root {
-    --accent-color: #377ED9;
+    --accent-color: #377ed9;
     --text-color: #000000;
     --sub-text-color: #828282;
-    --bg: #F4F4F4;
-    --sub-color: #FFFFFF;
+    --bg: #f4f4f4;
+    --sub-color: #ffffff;
+    --tall-color: #f88568;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Gotham Pro', serif;
+    font-family: "Gotham Pro", serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 22px;
@@ -63,8 +66,23 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(6, 27, 51, .6);
+    background-color: rgba(6, 27, 51, 0.6);
     z-index: 1;
+}
+
+section {
+    padding: 28px 0;
+}
+
+.section-title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.section-title__tall {
+    color: var(--tall-color);
 }
 
 /* ---------- HEADER ------------ */
@@ -100,7 +118,7 @@ a {
     background-color: var(--accent-color);
 }
 .burger-btn__line::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 5px;
     left: 50%;
@@ -111,7 +129,7 @@ a {
     height: 2px;
 }
 .burger-btn__line::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -5px;
     left: 50%;
@@ -138,7 +156,7 @@ a {
     height: 56px;
 }
 .logo::after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 100%;
@@ -243,7 +261,7 @@ a {
     width: 100%;
     margin-bottom: 20px;
     padding: 11px 17px;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #bdbdbd;
     font-size: 14px;
     line-height: 18px;
 }
@@ -259,7 +277,7 @@ a {
     border: none;
 }
 .btn::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 2px;
     left: 4px;
@@ -278,3 +296,49 @@ a {
     color: var(--accent-color);
 }
 /* /////////// HERO ----------- */
+
+/* ----------- ADVANTAGES--------- */
+.advantages__list {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    color: var(--text-color);
+    counter-reset: num;
+    list-style: none;
+}
+
+.advantages__item::after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: var(--tall-color);
+    box-shadow: 1px -1px 0 var(--sub-color), 2px -2px 0 var(--tall-color);
+}
+
+.advantages__item::before {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--sub-color);
+    font-size: 16px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    z-index: 5;
+}
+
+.advantages__item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 67px;
+}
+/* /////////// ADVANTAGES--------- */
