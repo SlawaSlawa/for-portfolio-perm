@@ -383,3 +383,53 @@
     }
 }
 /* /////////// PRICE -------------- */
+/* ----------- SHEME -------------- */
+@media (min-width: 768px) {
+    .sheme .swiper-pagination {
+        display: none;
+    }
+    .sheme .swiper-button-prev {
+        display: none;
+    }
+    .sheme .swiper-button-next {
+        display: none;
+    }
+    .sheme__slider .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 12px;
+        grid-row-gap: 45px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sheme__slider .swiper-wrapper {
+        grid-column-gap: 20px;
+    }
+}
+@media (min-width: 1280px) {
+    .sheme__slider .swiper-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 49px;
+    }
+}
+@media (min-width: 1920px) {
+    .sheme .swiper-slide {
+        padding: 48px 36px 80px;
+    }
+    .scheme-slider__title {
+        margin-bottom: 16px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .scheme-slider__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .sheme__slider .swiper-wrapper {
+        grid-column-gap: 20px;
+        grid-row-gap: 62px;
+    }
+}
+/* ----------- SCHEME -------------- */

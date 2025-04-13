@@ -53,6 +53,10 @@ a {
     cursor: pointer;
 }
 
+button {
+    cursor: pointer;
+}
+
 .container {
     max-width: calc(288px + 16px + 16px);
     margin: 0 auto;
@@ -512,3 +516,90 @@ section {
     border: 1px solid var(--sub-color);
 }
 /* ////////// PRICE -------------- */
+
+/* ----------- SHEME ------------ */
+.sheme {
+    background-color: var(--bg);
+}
+
+.sheme__slider {
+    padding-top: 26px;
+    padding-bottom: 34px;
+}
+
+.sheme__slider .swiper-wrapper {
+    counter-reset: num;
+    list-style: none;
+}
+
+.sheme__slider .swiper-slide {
+    position: relative;
+    padding: 32px 16px 48px;
+    background-color: var(--sub-color);
+}
+
+.sheme__slider .swiper-slide::after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 23px;
+    top: 0;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: var(--sub-color);
+    border: 3px solid var(--tall-color);
+}
+
+.sheme__slider .swiper-slide::before {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    left: 36px;
+    top: 0;
+    transform: translateY(-50%);
+    color: var(--tall-color);
+    font-size: 16px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    z-index: 5;
+}
+
+.sheme__slider .swiper-button-next {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    background-color: var(--sub-color);
+}
+
+.sheme__slider .swiper-button-prev {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background-color: var(--sub-color);
+}
+
+.sheme__slider .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sheme__slider .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    font-size: 20px;
+    font-weight: bold;
+}
+.sheme__slider .swiper-pagination {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+/* /////////// SHEME ------------ */
