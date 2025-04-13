@@ -350,6 +350,10 @@ section {
 
 /* ---------- ABOUT -------------- */
 .about {
+    padding: 0;
+}
+.about-bg {
+    padding: 28px 0;
     background-color: var(--bg);
 }
 .about__text {
@@ -383,7 +387,12 @@ section {
     left: 7px;
     background-color: var(--accent-color);
 }
+.about__info-img-bg {
+    padding: 24px 0;
+    background-color: var(--sub-color);
+}
 .about__info-img-wrap {
+    display: block;
     width: 100%;
 }
 .about__info-img {

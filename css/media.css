@@ -8,9 +8,6 @@
     .container {
         max-width: calc(708px + 16px + 16px);
     }
-    .section-title {
-        text-align: center;
-    }
 }
 
 @media (min-width: 1024px) {
@@ -232,6 +229,9 @@
 }
 
 @media (min-width: 768px) {
+    .section-title--advantages {
+        text-align: center;
+    }
     .advantages__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -271,3 +271,56 @@
     }
 }
 /* /////////// ADVANTAGES ---------- */
+
+/* ----------- ABOUT --------------- */
+@media (min-width: 768px) {
+    .about__info-img-wrap {
+        width: 464px;
+        margin: 0 auto;
+    }
+    .about__video {
+        height: 350px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .about-bg {
+        padding: 56px 0;
+    }
+    .section-title {
+        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section__subtitle {
+        margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .about-bg {
+        padding: 80px 0;
+    }
+    .section-title {
+        margin-bottom: 16px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .section__subtitle {
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .about__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .about__item {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* /////////// ABOUT --------------- */
