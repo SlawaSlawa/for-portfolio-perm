@@ -324,3 +324,62 @@
 }
 
 /* /////////// ABOUT --------------- */
+
+/* ----------- PRICE -------------- */
+@media (min-width: 768px) {
+    .price__list {
+        margin-bottom: 10px;
+    }
+    .price__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2px;
+    }
+    .price__item--heading {
+        display: flex;
+    }
+    .price__text {
+        width: 480px;
+    }
+    .price__num {
+        font-weight: 400;
+    }
+    .btn__bid {
+        width: 209px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .price__item--heading {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .price__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .bid {
+        padding: 28px 40px;
+    }
+    .bid__title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .bid__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bid__text {
+        width: 820px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .btn__bid {
+        width: 220px;
+        padding: 20px 40px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+/* /////////// PRICE -------------- */
