@@ -432,4 +432,90 @@
         grid-row-gap: 62px;
     }
 }
-/* ----------- SCHEME -------------- */
+/* ///////////// SCHEME -------------- */
+
+/* ------------- CALCULATE------------ */
+@media (min-width: 1024px) {
+    .calculate__wrapper {
+        padding: 40px 60px;
+    }
+}
+@media (min-width: 1280px) {
+    .calculate__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px;
+    }
+    .calculate__text-wrapper {
+        width: 450px;
+    }
+    .calculate__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .calculate__text {
+        padding-bottom: 32px;
+        font-size: 14px;
+        line-height: 22px;
+        border-bottom: 1px solid var(--sub-color);
+    }
+    .calculate__info {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+    .calculate__link {
+        display: flex;
+        gap: 20px;
+    }
+    .calculate__icon {
+        width: 28px;
+        height: 28px;
+    }
+    .calculate__text-info {
+        border: none;
+    }
+    .calculate__form {
+        width: 273px;
+    }
+    .calculate__disc {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1920px) {
+    .calculate__wrapper {
+        padding: 68px 100px;
+    }
+    .calculate__title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .calculate__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .calculate__form {
+        width: 336px;
+    }
+    .calculate__link {
+        gap: 26 px;
+    }
+    .calculate__icon {
+        width: 36px;
+        height: 36px;
+    }
+    .calculate__input {
+        margin-bottom: 24px;
+        padding: 12px 24px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .calculate__disc {
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+/* ///////////// CALCULATE------------ */

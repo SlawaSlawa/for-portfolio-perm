@@ -39,6 +39,7 @@ function shemeSliderInit() {
         console.log("new Swiper");
         shemeSlider = new Swiper(".sheme__slider", {
             slidesPerView: 1,
+            spaceBetween: 12,
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
