@@ -674,3 +674,19 @@ section {
     text-decoration: underline;
 }
 /* /////////// CALCULATE---------- */
+
+/* ----------- SERTIFICATIONS ---- */
+
+.sertificates {
+    background-color: var(--bg);
+}
+
+.sertificates__item {
+    width: 240px;
+}
+.sertificate__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+/* /////////// SERTIFICATIONS ---- */

@@ -519,3 +519,24 @@
     }
 }
 /* ///////////// CALCULATE------------ */
+
+/* ------------- SERTIFICATIONS ------ */
+@media (min-width: 1024px) {
+    .sertificates {
+        margin-bottom: 52px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .sertificates {
+        margin-bottom: 64px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .sertificates {
+        margin-bottom: 80px;
+    }
+}
+
+/* ///////////// SERTIFICATIONS ------ */

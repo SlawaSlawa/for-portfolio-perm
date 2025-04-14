@@ -19,24 +19,26 @@ const aboutSliderTwo = new Swiper(".about__slider-two .about__slider", {
     slidesPerView: "auto",
 });
 
-// const shemeSlider = new Swiper(".sheme__slider", {
-//     slidesPerView: 1,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         type: "fraction",
-//     },
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-// });
+const sertificatesSlider = new Swiper(".sertificates__slider", {
+    loop: true,
+    spaceBetween: 12,
+    slidesPerView: "auto",
+    slidesPerView: 1,
+    breakpoints: {
+        320: {
+            slidesPerView: "auto",
+        },
+        768: {
+            slidesPerView: 4,
+        },
+    },
+});
 
-var shemeSlider = null;
-var mediaQuerySize = 768;
+let shemeSlider = null;
+let mediaQuerySize = 768;
 
 function shemeSliderInit() {
     if (!shemeSlider) {
-        console.log("new Swiper");
         shemeSlider = new Swiper(".sheme__slider", {
             slidesPerView: 1,
             spaceBetween: 12,
@@ -62,7 +64,7 @@ function shemeSliderDestroy() {
 }
 
 window.addEventListener("load", function () {
-    var windowWidth = this.innerWidth;
+    const windowWidth = this.innerWidth;
     if (windowWidth <= mediaQuerySize) {
         shemeSliderInit();
     } else {
@@ -71,7 +73,7 @@ window.addEventListener("load", function () {
 });
 
 window.addEventListener("resize", function () {
-    var windowWidth = this.innerWidth;
+    const windowWidth = this.innerWidth;
     if (windowWidth < mediaQuerySize) {
         shemeSliderInit();
     } else {
