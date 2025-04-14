@@ -540,3 +540,62 @@
 }
 
 /* ///////////// SERTIFICATIONS ------ */
+
+/* ------------ FOOTER -------------- */
+@media (min-width: 768px) {
+    .footer__wrapper {
+        display: flex;
+        gap: 71px;
+    }
+    .footer__item-contacts {
+        display: flex;
+        gap: 71px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer--container {
+        padding: 0;
+    }
+    .footer__wrapper {
+        display: flex;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .footer__title {
+        margin-bottom: 6px;
+    }
+
+    .footer__item--desctop {
+        display: block;
+    }
+    .footer__item-contacts {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__item-contacts .footer__item {
+        margin-bottom: 0;
+    }
+
+    .footer__title {
+        margin-bottom: 16px;
+    }
+    .footer__list-item {
+        margin-bottom: 14px;
+    }
+
+    .footer__socials {
+        flex-direction: row;
+        gap: 28px;
+        top: 90px;
+        right: 4px;
+    }
+    .footer__copy {
+        width: 150px;
+        margin-left: auto;
+        text-align: right;
+    }
+}
+
+/* //////////// FOOTER -------------- */
