@@ -322,6 +322,7 @@ section {
 }
 
 .form__input--error-text {
+    display: none;
     position: absolute;
     bottom: 6px;
     left: 0;

@@ -95,3 +95,48 @@ window.addEventListener("scroll", (evt) => {
         heroEl.classList.remove("hero--active");
     }
 });
+
+// VALIDATION FORMS
+
+const consultationForm = document.querySelector(".consultation-form");
+const calculateForm = document.querySelector(".calculate__form");
+
+consultationForm.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+    const inputs = consultationForm.querySelectorAll(
+        ".consultation-form__input"
+    );
+    inputs.forEach((input) => {
+        input.classList.remove("form__input--error");
+        input
+            .closest(".form__input-wrapper")
+            .querySelector(".form__input--error-text").style.display = "none";
+
+        if (input.value === "") {
+            input.classList.add("form__input--error");
+            input
+                .closest(".form__input-wrapper")
+                .querySelector(".form__input--error-text").style.display =
+                "block";
+        }
+    });
+});
+
+calculateForm.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+    const inputs = calculateForm.querySelectorAll(".calculate__input");
+    inputs.forEach((input) => {
+        input.classList.remove("form__input--error");
+        input
+            .closest(".form__input-wrapper")
+            .querySelector(".form__input--error-text").style.display = "none";
+
+        if (input.value === "") {
+            input.classList.add("form__input--error");
+            input
+                .closest(".form__input-wrapper")
+                .querySelector(".form__input--error-text").style.display =
+                "block";
+        }
+    });
+});
