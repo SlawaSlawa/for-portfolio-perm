@@ -80,3 +80,18 @@ window.addEventListener("resize", function () {
         shemeSliderDestroy();
     }
 });
+
+// SCROLL
+
+const headerEl = document.querySelector(".header");
+const heroEl = document.querySelector(".hero");
+
+window.addEventListener("scroll", (evt) => {
+    if (pageYOffset >= 100) {
+        headerEl.classList.add("header--active");
+        heroEl.classList.add("hero--active");
+    } else {
+        headerEl.classList.remove("header--active");
+        heroEl.classList.remove("hero--active");
+    }
+});

@@ -128,16 +128,26 @@
                         <h2 class="consultation-form__title">
                             Закажите консультацию
                         </h2>
-                        <input
-                            type="text"
-                            class="consultation-form__input"
-                            placeholder="Имя"
-                        />
-                        <input
-                            type="tel"
-                            class="consultation-form__input"
-                            placeholder="Телефон"
-                        />
+                        <div class="form__input-wrapper">
+                            <input
+                                type="text"
+                                class="consultation-form__input form__input--error"
+                                placeholder="Имя"
+                            />
+                            <span class="form__input--error-text"
+                                >Поле обязательно для заполнения</span
+                            >
+                        </div>
+                        <div class="form__input-wrapper">
+                            <input
+                                type="tel"
+                                class="consultation-form__input form__input--error"
+                                placeholder="Телефон"
+                            />
+                            <span class="form__input--error-text"
+                                >Поле обязательно для заполнения</span
+                            >
+                        </div>
                         <button class="btn">Заказать</button>
                         <p class="consultation-form__disc">
                             Нажимая кнопку заказать, вы соглашаетесь на
@@ -584,16 +594,26 @@
                             </div>
                         </div>
                         <form class="calculate__form">
-                            <input
-                                class="calculate__input"
-                                type="text"
-                                placeholder="Имя"
-                            />
-                            <input
-                                class="calculate__input"
-                                type="tel"
-                                placeholder="Телефон"
-                            />
+                            <div class="form__input-wrapper">
+                                <input
+                                    class="calculate__input form__input--error"
+                                    type="text"
+                                    placeholder="Имя"
+                                />
+                                <span class="form__input--error-text"
+                                    >Поле обязательно для заполнения</span
+                                >
+                            </div>
+                            <div class="form__input-wrapper">
+                                <input
+                                    class="calculate__input form__input--error"
+                                    type="tel"
+                                    placeholder="Телефон"
+                                />
+                                <span class="form__input--error-text"
+                                    >Поле обязательно для заполнения</span
+                                >
+                            </div>
                             <button class="btn btn--inverse">
                                 Заказать расчёт стоимости
                             </button>
