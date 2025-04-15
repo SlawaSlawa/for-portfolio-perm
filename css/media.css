@@ -79,6 +79,12 @@
         height: 72px;
     }
 
+    .logo::after {
+        height: 80px;
+        bottom: -28px;
+        left: 43%;
+    }
+
     .info-block__wrapper {
         display: flex;
     }
@@ -98,6 +104,13 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .logo::after {
+        height: 80px;
+        bottom: -28px;
+        left: 44%;
+    }
+}
 @media (min-width: 1280px) {
     .info-block {
         gap: 9px;

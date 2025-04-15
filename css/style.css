@@ -100,6 +100,11 @@ section {
 
 .header {
     padding: 8px 0;
+    background-color: var(--sub-color);
+}
+
+.header .container {
+    overflow: visible;
 }
 
 .header__wrapper {
@@ -165,16 +170,20 @@ section {
     position: relative;
     width: 116px;
     height: 56px;
+    z-index: 10;
 }
 .logo::after {
     content: "";
     position: absolute;
     display: block;
     width: 100%;
-    height: 46px;
-    bottom: -29px;
+    height: 68px;
+    bottom: -22px;
+    left: 44%;
+    transform: translateX(-50%);
     border-radius: 0 0 50% 50%;
-    z-index: -1;
+    background-color: var(--sub-color);
+    z-index: 5;
 }
 
 .logo__img {
